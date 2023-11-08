@@ -213,38 +213,7 @@ $(window).on('load', function () {
 
 //skill 카운트
 
-
-$(window).scroll(function () {
-	var here = $('#here').offset().top;
-	var height = $(window).scrollTop();
-
-	if (here == height) {
-
-		$('.count-num').each(function () {
-			var $this = $(this),
-				countTo = $this.attr('data-count');
-
-			$({ countNum: $this.text() }).animate({
-				countNum: countTo
-			},
-				{
-					delay: 30,
-					time: 1000,
-					duration: 5000,
-					easing: 'linear',
-					step: function () {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
-						$this.text(this.countNum);
-					}
-				});
-		});
-
-	}
-
-});
-
+setTimeout(function(){
 $('.count-num').each(function () {
 	var $this = $(this),
 		countTo = $this.attr('data-count');
@@ -265,3 +234,4 @@ $('.count-num').each(function () {
 			}
 		});
 });
+}, 4000);
