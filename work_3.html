@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+
+    <!-- favicon -->
+    <link href="img/k_logo_2.svg" rel="icon" type="image/png" sizes="32X32" alt="icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/font/s-core-dream.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: 's-core-dream-regular'
+        }
+
+
+        .img_box {
+            max-width: 900px;
+            width: 80%;
+
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        div img {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .info {
+            width: auto;
+
+            position: fixed;
+            right: 100px;
+            bottom: 250px;
+
+        }
+
+        .fixed {
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+
+        .fixed:hover {
+            opacity: 0.8;
+        }
+
+        .fixed2 {
+            position: fixed;
+            right: 108px;
+            bottom: 40px;
+        }
+
+        .fixed2:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="img_box">
+        <img src="img/work/work_3.jpg" alt="img">
+        <img src="img/work/work_3-1.jpg" alt="img">
+        <img src="img/work/work_3-1-2.jpg" alt="img">
+    </div>
+
+    <div class="info">
+        <img src="img/work/work_3-2.jpg" alt="img">
+    </div>
+
+
+
+    <div class="top fixed">
+        <a href="#"><img src="img/top3.png" alt="top"></a>
+    </div>
+    <div class="fixed2">
+        <a href="../index.html#projects" onclick="window.close()"><img src="img/close.png" alt="back"></a>
+    </div>
+
+    <script>
+        $(function () {
+            $(".top>a").click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $('.top').fadeIn();
+                } else {
+                    $('.top').fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

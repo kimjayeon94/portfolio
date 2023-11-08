@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+
+    <!-- favicon -->
+    <link href="img/k_logo_2.svg" rel="icon" type="image/png" sizes="32X32" alt="icon">
+    <link rel="stylesheet" href="css/font/s-core-dream.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #242424;
+            font-family: 's-core-dream-medium';
+        }
+
+        .box {
+            width: 780px;
+            margin: 250px auto;
+        }
+
+        h2 {
+            color: blanchedalmond;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        video {
+            width: 780px;
+        }
+
+        .fixed2 {
+            position: fixed;
+            right: 108px;
+            bottom: 40px;
+        }
+
+        .fixed2:hover {
+            opacity: 0.8;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Shortcut Movie</h2>
+        <video src="video/sogae_video.mp4" loop autoplay muted></video>
+    </div>
+
+    <div class="fixed2">
+        <a href="../index.html#projects" onclick="window.close()"><img src="img/close.png" alt="back"></a>
+    </div>
+</body>
+
+</html>
